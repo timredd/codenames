@@ -1,0 +1,8 @@
+name = "codenames"
+main = "./dist/_worker.js/index.js"
+compatibility_date = "2024-04-23"
+compatibility_flags = ["nodejs_compat_v2"]
+send_metrics = false
+minify = false
+workers_dev = false
+vars = { ENVIRONMENT = "dev" }

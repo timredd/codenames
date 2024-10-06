@@ -34,6 +34,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.3",
     "@tailwindcss/typography": "^0.5.15",
-    "solid-devtools": "^0.30.1"
+    "solid-devtools": "^0.30.1",
+    "wrangler": "^3.80.0"
   }
 }

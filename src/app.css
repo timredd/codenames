@@ -74,9 +74,13 @@
   * {
     @apply border-border;
   }
-
   :root {
     --header-height: 3.125rem;
+  }
+  html,
+  body,
+  div#app {
+    @apply h-full;
   }
 
   @media (max-width: 640px) {

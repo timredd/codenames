@@ -14,12 +14,24 @@ importers:
       '@kobalte/tailwindcss':
         specifier: ^0.9.0
         version: 0.9.0(tailwindcss@3.4.13)
+      '@solid-primitives/state-machine':
+        specifier: ^0.0.3
+        version: 0.0.3(solid-js@1.9.1)
+      '@solid-primitives/storage':
+        specifier: ^4.2.1
+        version: 4.2.1(solid-js@1.9.1)
       '@solidjs/router':
         specifier: ^0.14.7
         version: 0.14.7(solid-js@1.9.1)
       '@solidjs/start':
         specifier: ^1.0.8
         version: 1.0.8(solid-js@1.9.1)(vinxi@0.4.3(@types/node@22.7.4)(ioredis@5.4.1)(terser@5.34.1))(vite@5.4.8(@types/node@22.7.4)(terser@5.34.1))
+      '@xstate/solid':
+        specifier: ^0.2.2
+        version: 0.2.2(solid-js@1.9.1)(xstate@5.18.2)
+      '@xstate/store':
+        specifier: ^2.6.0
+        version: 2.6.0(solid-js@1.9.1)
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.20(postcss@8.4.47)
@@ -47,9 +59,15 @@ importers:
       tailwindcss-animate:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.13)
+      unstorage:
+        specifier: ^1.12.0
+        version: 1.12.0(ioredis@5.4.1)
       vinxi:
         specifier: ^0.4.3
         version: 0.4.3(@types/node@22.7.4)(ioredis@5.4.1)(terser@5.34.1)
+      xstate:
+        specifier: ^5.18.2
+        version: 5.18.2
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.3
@@ -938,6 +956,11 @@ packages:
     peerDependencies:
       solid-js: ^1.6.12
 
+  '@solid-primitives/state-machine@0.0.3':
+    resolution: {integrity: sha512-UO9MFVTWAAqrMEb7sPGw5RYACi8JFMGZXfIaJ8tpzrmhubA17jsbqlGT8CSqpKJqoAeBVqloh6k8/zAnjhVc2A==, tarball: https://registry.npmjs.org/@solid-primitives/state-machine/-/state-machine-0.0.3.tgz}
+    peerDependencies:
+      solid-js: ^1.7.0
+
   '@solid-primitives/static-store@0.0.5':
     resolution: {integrity: sha512-ssQ+s/wrlFAEE4Zw8GV499yBfvWx7SMm+ZVc11wvao4T5xg9VfXCL9Oa+x4h+vPMvSV/Knv5LrsLiUa+wlJUXQ==, tarball: https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.0.5.tgz}
     peerDependencies:
@@ -947,6 +970,18 @@ packages:
     resolution: {integrity: sha512-ZecE4BqY0oBk0YG00nzaAWO5Mjcny8Fc06CdbXadH9T9lzq/9GefqcSe/5AtdXqjvY/DtJ5C6CkcjPZO0o/eqg==, tarball: https://registry.npmjs.org/@solid-primitives/static-store/-/static-store-0.0.8.tgz}
     peerDependencies:
       solid-js: ^1.6.12
+
+  '@solid-primitives/storage@4.2.1':
+    resolution: {integrity: sha512-1XUJeaSlizH9Eam/+IbIpslHEnggJMNZXzfsr06AlbG6tJtQENMu0+94ZIvooxt4Cyw46wPzcnHYbSK7LzoQAA==, tarball: https://registry.npmjs.org/@solid-primitives/storage/-/storage-4.2.1.tgz}
+    peerDependencies:
+      '@tauri-apps/plugin-store': '*'
+      solid-js: ^1.6.12
+      solid-start: '*'
+    peerDependenciesMeta:
+      '@tauri-apps/plugin-store':
+        optional: true
+      solid-start:
+        optional: true
 
   '@solid-primitives/styles@0.0.111':
     resolution: {integrity: sha512-1mBxOGAPXmfD5oYCvqjKBDN7SuNjz2qz7RdH7KtsuNLQh6lpuSKadtHnLvru0Y8Vz1InqTJisBIy/6P5kyDmPw==, tarball: https://registry.npmjs.org/@solid-primitives/styles/-/styles-0.0.111.tgz}
@@ -1032,6 +1067,26 @@ packages:
     resolution: {integrity: sha512-kVYrOrCMHwGvHRwpaeW2/PE7URcGtz4Rk/hIHa2xjt5PGopzzB/Y5GC8YgZjtqSRqo0ElAKsEik7UE6CXH3HXA==, tarball: https://registry.npmjs.org/@vinxi/server-functions/-/server-functions-0.4.3.tgz}
     peerDependencies:
       vinxi: ^0.4.3
+
+  '@xstate/solid@0.2.2':
+    resolution: {integrity: sha512-5hoZ5iC4LSOjZRCTtQalCQ1isMr3dE1cabnYT5WrWFH8G9eejb53FPgYUAiLgWH+xU3VG4V1hhbx669kR8GQ5w==, tarball: https://registry.npmjs.org/@xstate/solid/-/solid-0.2.2.tgz}
+    peerDependencies:
+      solid-js: ^1.6.0
+      xstate: ^5.18.2
+    peerDependenciesMeta:
+      xstate:
+        optional: true
+
+  '@xstate/store@2.6.0':
+    resolution: {integrity: sha512-pHiGIn378yPSCY36f/8iFF1KtKTKpGINqUVJH/dYydzWT+uXc4zKUQ+XUk0qTHchTvBXQ/UivRox2Q19ZnzTjw==, tarball: https://registry.npmjs.org/@xstate/store/-/store-2.6.0.tgz}
+    peerDependencies:
+      react: ^18.2.0
+      solid-js: ^1.7.6
+    peerDependenciesMeta:
+      react:
+        optional: true
+      solid-js:
+        optional: true
 
   abbrev@1.1.1:
     resolution: {integrity: sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==, tarball: https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz}
@@ -2940,6 +2995,9 @@ packages:
   xmlchars@2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==, tarball: https://registry.npmjs.org/xmlchars/-/xmlchars-2.2.0.tgz}
 
+  xstate@5.18.2:
+    resolution: {integrity: sha512-hab5VOe29D0agy8/7dH1lGw+7kilRQyXwpaChoMu4fe6rDP+nsHYhDYKfS2O4iXE7myA98TW6qMEudj/8NXEkA==, tarball: https://registry.npmjs.org/xstate/-/xstate-5.18.2.tgz}
+
   y18n@5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==, tarball: https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz}
     engines: {node: '>=10'}
@@ -3716,12 +3774,21 @@ snapshots:
     dependencies:
       solid-js: 1.9.1
 
+  '@solid-primitives/state-machine@0.0.3(solid-js@1.9.1)':
+    dependencies:
+      solid-js: 1.9.1
+
   '@solid-primitives/static-store@0.0.5(solid-js@1.9.1)':
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.9.1)
       solid-js: 1.9.1
 
   '@solid-primitives/static-store@0.0.8(solid-js@1.9.1)':
+    dependencies:
+      '@solid-primitives/utils': 6.2.3(solid-js@1.9.1)
+      solid-js: 1.9.1
+
+  '@solid-primitives/storage@4.2.1(solid-js@1.9.1)':
     dependencies:
       '@solid-primitives/utils': 6.2.3(solid-js@1.9.1)
       solid-js: 1.9.1
@@ -3896,6 +3963,16 @@ snapshots:
       magicast: 0.2.11
       recast: 0.23.9
       vinxi: 0.4.3(@types/node@22.7.4)(ioredis@5.4.1)(terser@5.34.1)
+
+  '@xstate/solid@0.2.2(solid-js@1.9.1)(xstate@5.18.2)':
+    dependencies:
+      solid-js: 1.9.1
+    optionalDependencies:
+      xstate: 5.18.2
+
+  '@xstate/store@2.6.0(solid-js@1.9.1)':
+    optionalDependencies:
+      solid-js: 1.9.1
 
   abbrev@1.1.1: {}
 
@@ -5924,6 +6001,8 @@ snapshots:
   xml-name-validator@5.0.0: {}
 
   xmlchars@2.2.0: {}
+
+  xstate@5.18.2: {}
 
   y18n@5.0.8: {}
 
